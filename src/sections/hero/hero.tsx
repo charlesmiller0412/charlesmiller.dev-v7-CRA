@@ -9,41 +9,45 @@ export const Hero = (props: any) => {
     const theme = useThemeStore((state: any) => state.theme);
 
     return (
+        // w-full pt-[11rem] landscape:justify-center landscape:pt-0 max-w-[120rem] m-auto h-screen pb-52 px-10 landscape:tablet:pt-[8vh] tablet:px-[10rem] flex flex-col tablet:flex-row items-center justify-evenly landscape:flex-row landscape:h-full tablet:landscape:h-screen gap-10 tablet:gap-0
         <section
-            className="hero w-screen max-w-[120rem] m-auto h-screen pt-[10vh] px-10 tablet:pt-[8vh] tablet:px-[10rem] flex flex-col tablet:flex-row items-center"
+            className="hero w-full max-w-[120rem] m-auto h-screen gap-12 pb-40 pt-[7.5rem] px-10 tablet:pt-[8vh] tablet:px-[10rem] flex flex-col tablet:flex-row items-center justify-evenly portrait:justify-evenly landscape:flex-row landscape:justify-center landscape:items-center landscape:h-full landscape:tablet:h-screen"
             id="hero"
         >
-            <div className="hero__left w-full flex justify-between h-full flex-col">
-                <div className="tablet:justify-center items-start tablet:items-start flex flex-col h-2/3 tablet:h-full">
+            <div className="hero__left w-screen flex justify-between h-fit flex-col landscape:w-1/2 landscape:h-1/2">
+                <div className="flex justify-between items-start flex-col h-1/2 w-screen px-10 landscape:w-full landscape:h-full landscape:justify-evenly">
                     <Headings
-                        h5className="headings__left--h5 text-sm"
-                        h2className="headings--h2 text-xl tablet:text-xl"
+                        h5className="headings__left--h5 text-xs tablet:landscape:text-sm landscape:text-xs"
+                        h2className="headings--h2 mb-0 text-md tablet:landscape:text-xl landscape:text-lg tablet:landscape:leading-[6.6rem] landscape:leading-[3rem] landscape:-[3rem]"
                         h5="my name is"
                         h2={
                             <>
                                 Charles
-                                <span className="text-blue text-xl tablet:text-xl font-bold leading-[6.6rem] ml-3">
+                                <span className="text-blue text-md landscape:text-lg tablet:landscape:text-xl font-bold tablet:landscape:leading-[6rem] landscape:leading-[3rem] leading-[3rem] ml-3">
                                     Miller
                                 </span>
                             </>
                         }
                     />
-                    <h3 className="text-md text-center w-fit m-auto tablet:w-full tablet:text-lg font-bold my-[1rem] tablet:my-[3.5rem] tablet:text-left z-10 text-black dark:text-offWhite">
-                        I&apos;m a Front End Developer <br />&<br /> UX/UI
-                        Designer
+                    <h3 className="landscape:text-sm text-sm landscape:m-0 landscape:text-left text-center w-fit m-auto tablet:w-full tablet:landscape:text-lg font-bold my-[.2rem] tablet:my-[3.5rem] tablet:text-left z-10 text-black dark:text-offWhite">
+                        I&apos;m a Front End Developer{" "}
+                        <span className="-my-2 block text-sm tablet:text-md">
+                            &
+                        </span>{" "}
+                        UX/UI Designer
                     </h3>
-                    <SocialLinks className="socialLinks text-icons w-[17rem] flex justify-between m-auto tablet:m-0" />
-                    <div className="hero__buttons flex justify-evenly tablet:justify-between w-full m-auto tablet:m-0 tablet:w-full tablet:max-w-[28rem] my-[1rem] tablet:mt-[4.5rem] z-10 desktop:max-w-[35rem]">
+                    <SocialLinks className="socialLinks text-icons w-[17rem] flex justify-between tablet:m-0 landscape:my-2 m-auto landscape:m-0" />
+                    <div className="hero__buttons flex justify-evenly landscape:justify-between gap-5 landscape:m-0 tablet:justify-between w-full m-auto tablet:m-0 tablet:w-full tablet:max-w-[28rem] z-10 desktop:max-w-[35rem]">
                         <a href="#projects">
                             <Button
-                                className="btn btn__light--blue w-[12rem] whitespace-nowrap dark:border dark:border-offWhite border border-black"
+                                className="btn btn__light--blue w-[12rem] tablet:landscape:w-[12rem] landscape:w-[10rem] whitespace-nowrap dark:border dark:border-offWhite border border-black"
                                 text="See my work"
                                 icon={faAnglesRight}
                             />
                         </a>{" "}
                         <a href="#contact">
                             <Button
-                                className="btn btn__light--black hover:bg-black w-[12rem] whitespace-nowrap"
+                                className="btn btn__light--black w-[12rem] hover:bg-black tablet:landscape:w-[12rem] landscape:w-[10rem] whitespace-nowrap"
                                 text="Hire Me"
                                 icon={faAnglesRight}
                             />
@@ -51,14 +55,14 @@ export const Hero = (props: any) => {
                     </div>
                 </div>
             </div>
-            <div className="hero__image w-1/2 tablet:w-full tablet:h-fit relative min-w-[33.7rem]">
+            <div className="hero__image h-full w-full relative flex justify-center items-center landscape:w-1/2 landscape:h-1/2">
                 <img
                     src={
                         theme === "light"
                             ? IMAGES.hero.photoDark
                             : IMAGES.hero.photoLight
                     }
-                    className="w-2/3 tablet:w-full m-auto h-full"
+                    className="w-4/5"
                     alt="Charles Miller"
                 />
                 <ProjectCarousel projects={props.projects} />

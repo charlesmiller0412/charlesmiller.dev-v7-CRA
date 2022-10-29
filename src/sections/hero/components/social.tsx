@@ -13,7 +13,7 @@ export const SocialLinks = (props: any) => {
                 href="https://www.github.com/charlesmiller0412"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all"
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
             >
                 <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -21,7 +21,7 @@ export const SocialLinks = (props: any) => {
                 href="https://www.linkedin.com/in/charlesmiller0412"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all"
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
             >
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -29,7 +29,7 @@ export const SocialLinks = (props: any) => {
                 href="https://discordapp.com/users/2807/"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all"
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
             >
                 <FontAwesomeIcon icon={faDiscord} />
             </a>
@@ -37,7 +37,7 @@ export const SocialLinks = (props: any) => {
                 href="https://twitter.com/millersWebDev"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all"
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
             >
                 <FontAwesomeIcon icon={faTwitter} />
             </a>
@@ -45,7 +45,7 @@ export const SocialLinks = (props: any) => {
                 href="mailto:charles@charlesmiller.dev"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all"
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
             >
                 <FontAwesomeIcon icon={faPaperPlane} />
             </a>

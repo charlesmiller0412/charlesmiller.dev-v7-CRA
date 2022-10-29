@@ -4,9 +4,8 @@ import { GithubLanguages } from "./components/githubLanguages";
 import { ExperienceCard } from "./components/experienceCard";
 import { AboutText } from "./components/aboutText";
 import { AboutSkills } from "./components/aboutSkills";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 
-export const About = () => {
+export const About = (props: any) => {
     return (
         <section className="about w-full h-auto tablet:h-screen " id="about">
             <Headings
@@ -20,16 +19,15 @@ export const About = () => {
                     <AboutText />
                     <AboutSkills />
                 </div>
-                <AnimationOnScroll
-                    animateIn="animate__slideInRight"
-                    animateOnce
-                >
-                    <div className="about__right w-fit m-auto pt-5 tablet:mt-0 h-full tablet:w-fit tablet:h-full flex flex-col justify-between">
-                        <ExperienceCard />
-                        <GitCommits />
-                        <GithubLanguages />
-                    </div>
-                </AnimationOnScroll>
+
+                <div className="about__right w-full m-auto pt-5 tablet:mt-0 h-full min-h-fit tablet:w-fit tablet:h-full flex flex-col justify-between">
+                    <ExperienceCard />
+                    <GitCommits
+                        data={props.data}
+                        loadingData={props.loadingData}
+                    />
+                    <GithubLanguages />
+                </div>
             </div>
         </section>
     );

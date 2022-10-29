@@ -9,7 +9,7 @@ export const NavLogo = (props: any) => {
             <a href="/">
                 <img
                     src={
-                        theme === "light"
+                        theme === "dark"
                             ? IMAGES.logos.logoDark
                             : IMAGES.logos.logoLight
                     }

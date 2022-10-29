@@ -2,7 +2,6 @@ import { Button } from "../../components/button";
 import { Headings } from "../../components/headings";
 import { ProjectCard } from "./components/projectCard";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 import Images from "../../assets/Images";
 import Lottie from "react-lottie";
 
@@ -30,20 +29,16 @@ export const Projects = (props: any) => {
         content = <Lottie options={errorOptions} />;
     } else {
         content = (
-            <div className="projects__container grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-y-14 place-items-center max-w-[120rem] m-auto">
+            <div className="projects__container grid grid-cols-1 landscape:grid-cols-2 tablet:grid-cols-2 desktop:grid-cols-3 gap-y-14 place-items-center max-w-[120rem] m-auto landscape:gap-x-5 landscape:tablet:gap-x-0">
                 {props.projects.map((project: any) => (
                     <ProjectCard key={project._id} project={project} />
                 ))}
-                <AnimationOnScroll
-                    animateIn="animate__flipInX"
-                    animateOut="animate__flipOutX"
-                >
-                    <Button
-                        className="flex btn btn__light--blue tablet:whitespace-nowrap w-fit px-20 h-fit"
-                        text="View all projects in my database"
-                        icon={faAnglesRight}
-                    />
-                </AnimationOnScroll>
+
+                <Button
+                    className="flex btn btn__light--blue tablet:whitespace-nowrap w-fit px-20 h-fit items-center"
+                    text="View all projects in my database"
+                    icon={faAnglesRight}
+                />
             </div>
         );
     }

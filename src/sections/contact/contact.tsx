@@ -49,8 +49,8 @@ export const Contact = () => {
                 h2="Contact"
             />
             <div className="contact__container w-full flex justify-between max-w-[120rem] m-auto flex-col tablet:flex-row tablet:mt-[5rem] text-black dark:text-white">
-                <div className="contact__container--left w-full tablet:w-1/3 justify-evenly h-full grid grid-cols-2 tablet:gap-x-20">
-                    <div className="contact__container--left-location items-start flex w-full tablet:items-center tablet:w-full flex-col tablet:flex-row h-fit">
+                <div className="contact__container--left w-full tablet:w-1/3 justify-evenly h-fit grid grid-cols-2 tablet:gap-x-20">
+                    <div className="contact__container--left-location items-start hidden tablet:flex w-full tablet:items-center tablet:w-full flex-col tablet:flex-row h-fit">
                         <FontAwesomeIcon
                             icon={faLocationDot}
                             className="text-lg w-20 text-black dark:text-blue mt-10"
@@ -62,7 +62,7 @@ export const Contact = () => {
                             Pensacola, FL USA
                         </div>
                     </div>
-                    <div className="contact__container--left-email items-end flex w-full tablet:items-center tablet:w-full flex-col tablet:flex-row">
+                    <div className="contact__container--left-email items-end hidden tablet:flex w-fit tablet:items-center tablet:w-full flex-col tablet:flex-row">
                         <FontAwesomeIcon
                             icon={faEnvelope}
                             className="text-lg w-20 text-black dark:text-blue mt-10"
@@ -74,7 +74,7 @@ export const Contact = () => {
                             charles@charlesmiller.dev
                         </div>
                     </div>
-                    <SocialLinks className="socialLinks text-icons w-1/2 m-auto col-span-2 flex justify-between mb-8 tablet:my-12 max-w-[25rem]" />
+                    <SocialLinks className="socialLinks text-icons w-full m-auto col-span-2 flex justify-between mb-8 tablet:my-12 max-w-[25rem]" />
                 </div>
                 <div className="contact__container--right w-full tablet:w-1/2 items-end">
                     <Form handleFormSubmit={handleFormSubmit} form={form} />

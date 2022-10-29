@@ -80,22 +80,22 @@ main {
 
 @layer components {
     section {
-        @apply w-full h-auto py-[4rem] tablet:py-[8rem] px-10 tablet:px-[3rem] desktop:px-[10rem];
+        @apply w-full h-auto py-[4rem] landscape:py-[4.5rem] tablet:py-[11vh] landscape:tablet:py-[11vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
     }
     .btn {
-        @apply py-[2vh] rounded-[.4rem] text-xs lg:text-sm font-regular leading-auto transition-all;
+        @apply py-[1rem] tablet:py-[2vh] landscape:py-2 rounded-[.4rem] text-xs lg:text-sm font-regular leading-auto transition-all;
     }
 
     .btn__light--blue {
-        @apply bg-blue  hover:bg-lightBlue text-black;
+        @apply bg-blue  hover:bg-lightBlue shadow-[4px_4px_0_0_rgba(0,0,0,1)] dark:shadow-[4px_4px_0_0_rgba(255,255,255,1)] text-black;
     }
 
     .btn__light--black {
-        @apply bg-black dark:bg-offBlack text-blue hover:bg-offBlack border border-lightBlue;
+        @apply bg-black dark:bg-offBlack text-blue hover:bg-offBlack border border-lightBlue shadow-[4px_4px_0_0_rgba(161,220,240,1)];
     }
 
     .cardBtn {
-        @apply rounded-[.4rem] text-xs font-regular w-fit my-[.8rem] py-[.5rem] px-[4rem] transition-all;
+        @apply rounded-[.4rem] text-xs font-regular w-fit my-[.8rem] py-[.5rem] px-[4vw] transition-all whitespace-nowrap;
     }
     .cardBtn__light {
         @apply bg-blue text-black border border-black hover:bg-lightBlue hover:text-offBlack;
@@ -106,7 +106,7 @@ main {
     }
 
     .headings--h2 {
-        @apply text-black dark:text-white text-xl font-bold leading-[6.6rem];
+        @apply text-black mb-8 tablet:mb-0 dark:text-white text-xl font-bold leading-[4rem] landscape:leading-[6.6rem];
     }
 
     .headings__left--h5 {
