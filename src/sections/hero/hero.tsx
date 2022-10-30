@@ -11,7 +11,7 @@ export const Hero = (props: any) => {
     return (
         // w-full pt-[11rem] landscape:justify-center landscape:pt-0 max-w-[120rem] m-auto h-screen pb-52 px-10 landscape:tablet:pt-[8vh] tablet:px-[10rem] flex flex-col tablet:flex-row items-center justify-evenly landscape:flex-row landscape:h-full tablet:landscape:h-screen gap-10 tablet:gap-0
         <section
-            className="hero w-full max-w-[120rem] m-auto h-screen gap-12 pb-40 pt-[7.5rem] px-10 tablet:pt-[8vh] tablet:px-[10rem] flex flex-col tablet:flex-row items-center justify-evenly portrait:justify-evenly landscape:flex-row landscape:justify-center landscape:items-center landscape:h-full landscape:tablet:h-screen"
+            className="hero w-full max-w-[120rem] m-auto h-screen gap-12 pb-40 pt-[7.5rem] px-10 tablet:pt-[8vh] tablet:px-[10rem] flex flex-col tablet:flex-row items-center justify-center portrait:justify-evenly landscape:flex-row landscape:justify-center landscape:items-center landscape:h-full landscape:tablet:h-screen"
             id="hero"
         >
             <div className="hero__left w-screen flex justify-between h-fit flex-col landscape:w-1/2 landscape:h-1/2">
@@ -55,7 +55,7 @@ export const Hero = (props: any) => {
                     </div>
                 </div>
             </div>
-            <div className="hero__image h-full w-full relative flex justify-center items-center landscape:w-1/2 landscape:h-1/2">
+            <div className="hero__image h-fit w-full relative flex justify-center items-center landscape:w-1/2 landscape:h-1/2">
                 <img
                     src={
                         theme === "light"

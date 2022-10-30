@@ -8,8 +8,8 @@ export const MobileMenu = (props: any) => {
             <div
                 className={
                     props.showMenu === true
-                        ? "mobileMenu fixed top-0 left-0 w-full h-screen bg-white dark:bg-black z-40 flex flex-col items-center justify-evenly text-center transition-all duration-1000 text-black dark:text-white pt-[7vh] landscape:pt-0 landscape:flex-row landscape:text-left landscape:top-0 landscape:h-full"
-                        : "mobileMenu fixed top-0 left-full w-full h-screen bg-white dark:bg-black z-40 flex flex-col items-center justify-evenly text-center transition-all duration-1000 text-black dark:text-white pt-[7vh] landscape:flex-row landscape:text-left landscape:-top-full landscape:left-0"
+                        ? "mobileMenu fixed top-0 left-0 w-full h-screen bg-white dark:bg-black z-40 flex flex-col items-center justify-evenly text-center transition-all duration-1000 text-black dark:text-white pt-[7vh] landscape:pt-0 landscape:flex-row landscape:text-left landscape:top-0 landscape:h-full opacity-100"
+                        : "mobileMenu fixed top-0 left-[200%] w-full h-screen bg-white dark:bg-black z-40 flex flex-col items-center justify-evenly text-center transition-all duration-1000 text-black dark:text-white pt-[7vh] landscape:flex-row landscape:text-left landscape:-top-[200%] landscape:left-0"
                 }
             >
                 <ul className="">

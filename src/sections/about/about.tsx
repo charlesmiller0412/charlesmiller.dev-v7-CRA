@@ -15,17 +15,14 @@ export const About = (props: any) => {
                 h2="About Me"
             />
             <div className="about__container w-full h-3/5 flex justify-between flex-col tablet:flex-row tablet:mt-[5rem] max-w-[120rem] m-auto mt-5">
-                <div className="about__left w-full tablet:w-1/2 flex flex-col h-full justify-between items:start">
+                <div className="about__left w-full tablet:w-1/2 flex flex-col h-full justify-between items:start gap-y-5">
                     <AboutText />
                     <AboutSkills />
                 </div>
 
-                <div className="about__right w-full m-auto pt-5 tablet:mt-0 h-full min-h-fit tablet:w-fit tablet:h-full flex flex-col justify-between">
+                <div className="about__right w-full m-auto pt-5 tablet:mt-0 h-fit min-h-fit tablet:w-fit tablet:h-full flex flex-col justify-between">
                     <ExperienceCard />
-                    <GitCommits
-                        data={props.data}
-                        loadingData={props.loadingData}
-                    />
+                    <GitCommits />
                     <GithubLanguages />
                 </div>
             </div>

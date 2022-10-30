@@ -2,7 +2,7 @@ import images from "../../../assets/Images";
 
 export const AboutSkills = () => {
     return (
-        <div className="aboutSkills grid tablet:gap-5 mt-10 tablet:mt-0">
+        <div className="aboutSkills grid mt-10 tablet:mt-0">
             <div className="experience inline-grid grid-cols-11 w-full gap-3">
                 <span
                     className="tooltip w-[2rem] h-[2rem] relative tablet:w-[3.5rem] tablet:h-[3.5rem]"

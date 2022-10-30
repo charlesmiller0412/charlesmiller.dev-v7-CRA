@@ -7,7 +7,6 @@ import { Navbar } from "./sections/navbar/navbar";
 import { Projects } from "./sections/projects/projects";
 import { Skills } from "./sections/skills/skills";
 import useThemeStore from "./appStore";
-import { Octokit } from "octokit";
 
 function App() {
     const theme = useThemeStore((state: any) => state.theme);
@@ -15,32 +14,6 @@ function App() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
     const [projects, setProjects] = useState([]);
-    const [data, setData] = useState<any>([]);
-    const [loadingData, setLoadingData] = useState(true);
-
-    const getData = async () => {
-        let list = [];
-
-        const octokit = new Octokit({
-            auth: process.env.REACT_APP_GHP_TOKEN,
-        });
-        let res: any = await octokit.request(
-            "GET /users/{username}/events/public",
-            {
-                username: "charlesmiller0412",
-            }
-        );
-
-        for (let i = 0; i < res.data.length; i++) {
-            if (res.data[i].type === "PushEvent") {
-                if (list.length < 5) {
-                    list.push(res.data[i]);
-                }
-            }
-        }
-        setData(list);
-        setLoadingData(false);
-    };
 
     const fetchProjects = async () => {
         try {
@@ -48,8 +21,11 @@ function App() {
                 "https://millerportfolioprojects.herokuapp.com/api/projects"
             );
             const json = await response.json();
+            console.log(json);
             setProjects(json);
+            console.log(projects);
             setLoading(false);
+            setError(false);
             return;
         } catch (err: any) {
             setError(true);
@@ -64,7 +40,6 @@ function App() {
     }
     useEffect(() => {
         fetchProjects();
-        getData();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -84,7 +59,7 @@ function App() {
                 <Hero theme={theme} projects={projects} />
                 <Projects projects={projects} error={error} loading={loading} />
                 <Skills />
-                <About data={data} loadingData={loadingData} />
+                <About />
                 <Contact />
             </main>
             <footer className="bg-white dark:bg-black h-[2rem] text-black dark:text-white text-xs flex justify-center items-center">
