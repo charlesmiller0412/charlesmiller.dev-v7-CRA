@@ -26,6 +26,13 @@ export const NavLinks = () => {
                 About Me
             </a>
             <a
+                href="https://charlesmiller.tech"
+                target="__blank"
+                className="relative cursor-pointer after:content-[''] after:w-full after:h-[.3rem] after:absolute after:bottom-0 after:left-0 hover:after:bg-blue text-black dark:text-white"
+            >
+                Blog & Social Media
+            </a>
+            <a
                 href="#contact"
                 className="relative cursor-pointer after:content-[''] after:w-full after:h-[.3rem] after:absolute after:bottom-0 after:left-0 hover:after:bg-blue text-black dark:text-white"
             >

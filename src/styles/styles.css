@@ -95,7 +95,7 @@ main {
     }
 
     .cardBtn {
-        @apply rounded-[.4rem] text-xs font-regular w-fit my-[.8rem] py-[.5rem] px-[4vw] transition-all whitespace-nowrap;
+        @apply rounded-[.4rem] text-xs font-regular my-[.8rem] py-[.5rem] px-[3rem] transition-all whitespace-nowrap w-fit;
     }
     .cardBtn__light {
         @apply bg-blue text-black border border-black hover:bg-lightBlue hover:text-offBlack;

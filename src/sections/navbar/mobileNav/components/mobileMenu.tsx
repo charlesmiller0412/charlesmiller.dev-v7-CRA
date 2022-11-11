@@ -61,6 +61,16 @@ export const MobileMenu = (props: any) => {
                             Contact Me
                         </a>
                     </li>
+                    <li className="py-[1.5vh]">
+                        <a
+                            href="https://charlesmiller.tech"
+                            target="__blank"
+                            className="text-md font-bold hover:text-blue"
+                            onClick={props.handleClick}
+                        >
+                            Blog & Social Media
+                        </a>
+                    </li>
                 </ul>
                 <div className="mobileMenu__social w-3/4 landscape:w-1/2 landscape:flex landscape:flex-col landscape:items-center landscape:justify-between landscape:h-1/2">
                     <NavLogo className="navbar__logo w-[8.7rem] h-[2.5rem] relative m-auto portrait:mb-12" />

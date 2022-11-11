@@ -55,7 +55,7 @@ export const Hero = (props: any) => {
                     </div>
                 </div>
             </div>
-            <div className="hero__image h-fit w-full relative flex justify-center items-center landscape:w-1/2 landscape:h-1/2">
+            <div className="hero__image min-w-[40rem] max-w-[50vw] h-fit w-full relative flex justify-center items-center landscape:w-1/2 landscape:h-1/2">
                 <img
                     src={
                         theme === "light"

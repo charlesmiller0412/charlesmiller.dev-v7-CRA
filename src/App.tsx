@@ -7,6 +7,7 @@ import { Navbar } from "./sections/navbar/navbar";
 import { Projects } from "./sections/projects/projects";
 import { Skills } from "./sections/skills/skills";
 import useThemeStore from "./appStore";
+import { Blog } from "./sections/blog/blog";
 
 function App() {
     const theme = useThemeStore((state: any) => state.theme);
@@ -14,6 +15,7 @@ function App() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
     const [projects, setProjects] = useState([]);
+    const [articles, setArticles] = useState([]);
 
     const fetchProjects = async () => {
         try {
@@ -21,9 +23,23 @@ function App() {
                 "https://millerportfolioprojects.herokuapp.com/api/projects"
             );
             const json = await response.json();
-            console.log(json);
             setProjects(json);
-            console.log(projects);
+            setLoading(false);
+            setError(false);
+            return;
+        } catch (err: any) {
+            setError(true);
+            console.error(err.message);
+        }
+    };
+    const fetchArticles = async () => {
+        try {
+            const response = await fetch(
+                "https://dev.to/api/articles?username=charlesmiller0412&per_page=3"
+            );
+            const json = await response.json();
+            setArticles(json);
+            console.log(articles);
             setLoading(false);
             setError(false);
             return;
@@ -40,6 +56,7 @@ function App() {
     }
     useEffect(() => {
         fetchProjects();
+        fetchArticles();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -60,6 +77,7 @@ function App() {
                 <Projects projects={projects} error={error} loading={loading} />
                 <Skills />
                 <About />
+                <Blog articles={articles} error={error} loading={loading} />
                 <Contact />
             </main>
             <footer className="bg-white dark:bg-black h-[2rem] text-black dark:text-white text-xs flex justify-center items-center">

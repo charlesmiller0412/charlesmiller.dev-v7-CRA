@@ -43,8 +43,8 @@ export const Contact = () => {
             id="contact"
         >
             <Headings
-                h5className="headings__right--h5 text-end text-sm"
-                h2className="headings--h2 text-lg text-end tablet:text-xl"
+                h5className="headings__left--h5 text-start text-sm"
+                h2className="headings--h2 text-lg text-start tablet:text-xl"
                 h5="hire me"
                 h2="Contact"
             />

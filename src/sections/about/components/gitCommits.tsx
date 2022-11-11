@@ -26,7 +26,7 @@ export const GitCommits = () => {
 
     useEffect(() => {
         getData();
-    });
+    }, []);
 
     return (
         <div className="gitCommits flex w-full h-fit min-h-fit text-black bg-white text-center rounded-[.3rem] shadow-[0_3px_10px_rgba(0,0,0,.05)] dark:shadow-[0_3px_10px_rgba(255,255,255,.05)] border-[.02rem] border-[rgba(65,65,65,.5)]  flex-col justify-between py-[1.2rem] whitespace-nowrap overflow-hidden">

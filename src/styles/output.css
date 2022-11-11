@@ -680,8 +680,8 @@ section {
   border-radius: .4rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 3rem;
+  padding-right: 3rem;
   font-size: 1.2rem;
   font-weight: 400;
   transition-property: all;
@@ -953,6 +953,10 @@ section {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -1107,12 +1111,44 @@ section {
   width: 75%;
 }
 
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-3\/12 {
+  width: 25%;
+}
+
+.w-1\/12 {
+  width: 8.333333%;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
+}
+
+.min-w-\[40rem\] {
+  min-width: 40rem;
+}
+
 .max-w-\[120rem\] {
   max-width: 120rem;
 }
 
 .max-w-\[25rem\] {
   max-width: 25rem;
+}
+
+.max-w-\[50vw\] {
+  max-width: 50vw;
 }
 
 .max-w-\[62\.5rem\] {
@@ -1144,12 +1180,12 @@ section {
           user-select: none;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-11 {
@@ -1166,6 +1202,10 @@ section {
 
 .flex-col {
   flex-direction: column;
+}
+
+.place-content-center {
+  place-content: center;
 }
 
 .place-items-center {
@@ -1482,6 +1522,10 @@ section {
 
 .text-right {
   text-align: right;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .text-end {
@@ -1973,12 +2017,32 @@ main {
     width: 38rem;
   }
 
+  .tablet\:w-\[20rem\] {
+    width: 20rem;
+  }
+
+  .tablet\:w-\[15rem\] {
+    width: 15rem;
+  }
+
+  .tablet\:w-\[10rem\] {
+    width: 10rem;
+  }
+
   .tablet\:max-w-\[28rem\] {
     max-width: 28rem;
   }
 
+  .tablet\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .tablet\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tablet\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .tablet\:flex-row {
@@ -2073,6 +2137,14 @@ main {
 
   .desktop\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .desktop\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .desktop\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .desktop\:p-10 {
