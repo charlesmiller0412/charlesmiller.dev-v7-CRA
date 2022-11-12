@@ -34,11 +34,16 @@ export const Projects = (props: any) => {
                     <ProjectCard key={project._id} project={project} />
                 ))}
 
-                <Button
-                    className="flex btn btn__light--blue tablet:whitespace-nowrap w-fit px-20 h-fit items-center"
-                    text="View all projects in my database"
-                    icon={faAnglesRight}
-                />
+                <a
+                    href="https://charlesmiller.dev/projectDatabase"
+                    target="__blank"
+                >
+                    <Button
+                        className="flex btn btn__light--blue tablet:whitespace-nowrap w-fit px-20 h-fit items-center"
+                        text="View all projects in my database"
+                        icon={faAnglesRight}
+                    />
+                </a>
             </div>
         );
     }

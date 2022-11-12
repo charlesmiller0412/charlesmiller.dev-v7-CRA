@@ -123,4 +123,7 @@ main {
     .moon {
         @apply text-xl text-black;
     }
+    h4 {
+        @apply text-sm text-blue capitalize font-medium justify-self-center;
+    }
 }
