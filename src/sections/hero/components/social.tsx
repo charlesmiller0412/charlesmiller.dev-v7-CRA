@@ -3,8 +3,9 @@ import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import {
     faGithub,
     faLinkedin,
-    faDiscord,
     faTwitter,
+    faPinterest,
+    faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 export const SocialLinks = (props: any) => {
     return (
@@ -26,20 +27,28 @@ export const SocialLinks = (props: any) => {
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a
-                href="https://discordapp.com/users/2807/"
-                target="__blank"
-                onClick={props.onClick}
-                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
-            >
-                <FontAwesomeIcon icon={faDiscord} />
-            </a>
-            <a
                 href="https://twitter.com/millersWebDev"
                 target="__blank"
                 onClick={props.onClick}
                 className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
             >
                 <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a
+                href="https://pinterest.com/charlesmiller0412"
+                target="__blank"
+                onClick={props.onClick}
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
+            >
+                <FontAwesomeIcon icon={faPinterest} />
+            </a>
+            <a
+                href="https://instagram.com/millerswebdev"
+                target="__blank"
+                onClick={props.onClick}
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
+            >
+                <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
                 href="mailto:charles@charlesmiller.dev"

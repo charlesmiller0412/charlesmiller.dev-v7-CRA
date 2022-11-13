@@ -24,7 +24,16 @@ export const Blog = (props: any) => {
                         <p className="text-xs">
                             {article.readable_publish_date}
                         </p>
-                        <p className="text-xs">{article.description}</p>
+                        <p className="text-xs ml-2">
+                            {article.description}
+                            <a
+                                href={article.url}
+                                target="__blank"
+                                className="flex items-end gap-3 text-blue underline hover:overline"
+                            >
+                                Read More...
+                            </a>
+                        </p>
                         <ul className="text-xxs flex gap-3">
                             {article.tag_list.map((tag: any) => (
                                 <li key={tag}>#{tag}</li>
@@ -33,12 +42,12 @@ export const Blog = (props: any) => {
                         <a
                             href={article.url}
                             target="__blank"
-                            className="flex items-end gap-3 text-blue underline hover:overline"
+                            className="flex w-1/2 items-end gap-3 text-blue underline hover:overline"
                         >
-                            Read full article{" "}
+                            Read full article on
                             <img
                                 src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
-                                className="w-1/6"
+                                className="w-1/4"
                                 alt="dev.to"
                             />
                         </a>

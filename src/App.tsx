@@ -20,7 +20,7 @@ function App() {
     const fetchProjects = async () => {
         try {
             const response = await fetch(
-                "https://millerportfolioprojects.herokuapp.com/api/projects"
+                "https://dbserver.onrender.com/api/projects/favorites"
             );
             const json = await response.json();
             setProjects(json);

@@ -1,5 +1,6 @@
 import { Button } from "../../../components/button";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { v4 as uuidv4 } from "uuid";
 
 export const ProjectCard = (props: any) => {
     return (
@@ -37,7 +38,7 @@ export const ProjectCard = (props: any) => {
                 <ul className="px-3 grid grid-cols-3 gap-3 text-center uppercase">
                     {props.project.languages.map((language: any) => (
                         <li
-                            key={language}
+                            key={uuidv4()}
                             className="bg-blue rounded-xl py-1 text-offBlack text-xxs"
                         >
                             {language}
