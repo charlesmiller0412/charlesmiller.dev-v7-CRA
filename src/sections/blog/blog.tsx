@@ -28,7 +28,8 @@ export const Blog = (props: any) => {
                             {article.description}
                             <a
                                 href={article.url}
-                                target="__blank"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="flex items-end gap-3 text-blue underline hover:overline"
                             >
                                 Read More...
@@ -41,7 +42,8 @@ export const Blog = (props: any) => {
                         </ul>
                         <a
                             href={article.url}
-                            target="__blank"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="flex w-1/2 items-end gap-3 text-blue underline hover:overline"
                         >
                             Read full article on
@@ -54,7 +56,11 @@ export const Blog = (props: any) => {
                     </div>
                 ))}
             </div>
-            <a href="https://charlesmiller.tech" target="__blank">
+            <a
+                href="https://charlesmiller.tech"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <Button
                     className="flex btn btn__light--blue tablet:whitespace-nowrap w-fit px-20 h-fit items-center my-10 mx-auto"
                     text="View my blog & social media site"

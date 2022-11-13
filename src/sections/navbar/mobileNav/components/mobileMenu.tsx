@@ -64,7 +64,6 @@ export const MobileMenu = (props: any) => {
                     <li className="py-[1.5vh]">
                         <a
                             href="#blog"
-                            target="__blank"
                             className="text-md font-bold hover:text-blue"
                             onClick={props.handleClick}
                         >
