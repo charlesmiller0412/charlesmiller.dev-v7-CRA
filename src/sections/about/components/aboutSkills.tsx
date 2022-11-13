@@ -2,7 +2,7 @@ import images from "../../../assets/Images";
 
 export const AboutSkills = () => {
     return (
-        <div className="aboutSkills grid mt-10 tablet:mt-0 gap-3 w-11/12">
+        <div className="aboutSkills grid mt-10 tablet:mt-0 gap-3 w-11/12 mx-auto">
             <h4>experienced in</h4>
             <div className="experience flex justify-center gap-5 flex-wrap tablet:inline-grid tablet:grid-cols-11 tablet:w-full tablet:gap-3">
                 <span

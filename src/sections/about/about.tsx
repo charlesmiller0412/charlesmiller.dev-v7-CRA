@@ -20,7 +20,7 @@ export const About = (props: any) => {
                     <AboutSkills />
                 </div>
 
-                <div className="about__right w-full m-auto pt-5 tablet:mt-0 h-fit min-h-fit tablet:w-fit tablet:h-full flex flex-col justify-between">
+                <div className="about__right w-full m-auto pt-5 mt-5 tablet:mt-0 h-fit min-h-fit tablet:w-fit tablet:h-full flex flex-col justify-between">
                     <ExperienceCard />
                     <GitCommits />
                     <GithubLanguages />

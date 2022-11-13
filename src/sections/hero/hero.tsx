@@ -15,9 +15,9 @@ export const Hero = (props: any) => {
             id="hero"
         >
             <div className="hero__left w-screen flex justify-between h-fit flex-col landscape:w-1/2 landscape:h-1/2">
-                <div className="flex justify-between items-start flex-col h-1/2 w-screen px-10 landscape:w-full landscape:h-full landscape:justify-evenly">
+                <div className="flex justify-between items-center landscape:items-start tablet:items-start flex-col h-1/2 w-screen px-10 landscape:w-full landscape:h-full landscape:justify-evenly">
                     <Headings
-                        h5className="headings__left--h5 text-xs tablet:landscape:text-sm landscape:text-xs"
+                        h5className="headings__left--h5 portrait:hidden tablet:portrait:flex landscape:flex text-xs tablet:landscape:text-sm landscape:text-xs"
                         h2className="headings--h2 mb-0 text-md tablet:landscape:text-xl landscape:text-lg tablet:landscape:leading-[6.6rem] landscape:leading-[3rem] landscape:-[3rem]"
                         h5="my name is"
                         h2={
@@ -29,7 +29,7 @@ export const Hero = (props: any) => {
                             </>
                         }
                     />
-                    <h3 className="landscape:text-sm text-sm landscape:m-0 landscape:text-left text-center w-fit m-auto tablet:w-full tablet:landscape:text-lg font-bold my-[.2rem] tablet:my-[3.5rem] tablet:text-left z-10 text-black dark:text-offWhite">
+                    <h3 className="landscape:text-sm text-sm landscape:m-0 landscape:text-left text-center w-fit m-auto tablet:w-full tablet:landscape:text-md font-bold my-[.2rem] tablet:my-[3.5rem] tablet:text-left z-10 text-black dark:text-offWhite">
                         I&apos;m a Front End Developer{" "}
                         <span className="-my-2 block text-sm tablet:text-md">
                             &
