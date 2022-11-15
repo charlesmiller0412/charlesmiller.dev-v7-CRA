@@ -14,7 +14,7 @@ export const SocialLinks = (props: any) => {
                 href="https://www.github.com/charlesmiller0412"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -22,7 +22,7 @@ export const SocialLinks = (props: any) => {
                 href="https://www.linkedin.com/in/charlesmiller0412"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -30,7 +30,7 @@ export const SocialLinks = (props: any) => {
                 href="https://twitter.com/millersWebDev"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faTwitter} />
             </a>
@@ -38,7 +38,7 @@ export const SocialLinks = (props: any) => {
                 href="https://pinterest.com/charlesmiller0412"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faPinterest} />
             </a>
@@ -46,7 +46,7 @@ export const SocialLinks = (props: any) => {
                 href="https://instagram.com/millerswebdev"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faInstagram} />
             </a>
@@ -54,7 +54,7 @@ export const SocialLinks = (props: any) => {
                 href="mailto:charles@charlesmiller.dev"
                 target="__blank"
                 onClick={props.onClick}
-                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-lg"
+                className="text-icons hover:text-blue dark:hover:text-lightBlue text-offBlack dark:text-white transition-all landscape:text-iconLg"
             >
                 <FontAwesomeIcon icon={faPaperPlane} />
             </a>

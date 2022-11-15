@@ -10,7 +10,8 @@ module.exports = {
             md: "2.2rem",
             lg: "2.6rem",
             xl: "4.4rem",
-            icons: "3rem",
+            icons: "3.5rem",
+            iconLg: "4rem",
         },
         lineHeight: {
             auto: "auto",

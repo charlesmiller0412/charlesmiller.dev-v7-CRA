@@ -8,6 +8,7 @@ const IMAGES = {
     hero: {
         photoLight: require("./hero/heroImage2Light.png"),
         photoDark: require("./hero/heroImage2.png"),
+        myPhoto: require("./hero/myPhotoTransparent.png"),
     },
     icons: {
         afterEffects: require("./icons/AfterEffects.png"),

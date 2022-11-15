@@ -126,4 +126,10 @@ main {
     h4 {
         @apply text-sm text-blue capitalize font-medium justify-self-center;
     }
+    .box {
+        @apply rounded-tl-[5rem] rounded-br-[5rem] rounded-bl-[1rem] rounded-tr-[1rem];
+    }
+    .boxInside {
+        @apply h-[98%] w-[98%] absolute top-0 right-0;
+    }
 }

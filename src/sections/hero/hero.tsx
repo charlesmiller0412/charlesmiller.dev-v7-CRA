@@ -3,11 +3,8 @@ import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { SocialLinks } from "./components/social";
 import { Headings } from "../../components/headings";
 import { ProjectCarousel } from "./components/projectCarousel";
-import IMAGES from "../../assets/Images";
-import useThemeStore from "../../appStore";
+import { HeroImg } from "./components/heroImg";
 export const Hero = (props: any) => {
-    const theme = useThemeStore((state: any) => state.theme);
-
     return (
         // w-full pt-[11rem] landscape:justify-center landscape:pt-0 max-w-[120rem] m-auto h-screen pb-52 px-10 landscape:tablet:pt-[8vh] tablet:px-[10rem] flex flex-col tablet:flex-row items-center justify-evenly landscape:flex-row landscape:h-full tablet:landscape:h-screen gap-10 tablet:gap-0
         <section
@@ -36,8 +33,8 @@ export const Hero = (props: any) => {
                         </span>{" "}
                         UX/UI Designer
                     </h3>
-                    <SocialLinks className="socialLinks text-icons w-[17rem] flex justify-between tablet:m-0 landscape:my-2 m-auto landscape:m-0" />
-                    <div className="hero__buttons flex justify-evenly landscape:justify-between gap-5 landscape:m-0 tablet:justify-between w-full m-auto tablet:m-0 tablet:w-full tablet:max-w-[28rem] z-10 desktop:max-w-[35rem]">
+                    <SocialLinks className="socialLinks text-icons portrait:w-1/2 w-2/3 flex justify-between tablet:m-0 landscape:my-2 m-auto landscape:m-0" />
+                    <div className="hero__buttons flex justify-evenly landscape:justify-between gap-5 landscape:m-0 tablet:justify-between w-full m-auto tablet:m-0 tablet:w-full tablet:max-w-[30rem] z-10">
                         <a href="#projects">
                             <Button
                                 className="btn btn__light--blue w-[12rem] tablet:landscape:w-[12rem] landscape:w-[10rem] whitespace-nowrap dark:border dark:border-offWhite border border-black"
@@ -55,16 +52,8 @@ export const Hero = (props: any) => {
                     </div>
                 </div>
             </div>
-            <div className="hero__image min-w-[40rem] max-w-[50vw] h-fit w-full relative flex justify-center items-center landscape:w-1/2 landscape:h-1/2">
-                <img
-                    src={
-                        theme === "light"
-                            ? IMAGES.hero.photoDark
-                            : IMAGES.hero.photoLight
-                    }
-                    className="w-4/5"
-                    alt="Charles Miller"
-                />
+            <div className="hero__image min-w-[40rem] max-w-[50vw] h-fit w-full relative grid place-items-center gap-3 landscape:w-1/2 landscape:h-fit">
+                <HeroImg />
                 <ProjectCarousel projects={props.projects} />
             </div>
         </section>
