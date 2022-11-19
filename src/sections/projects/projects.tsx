@@ -29,7 +29,7 @@ export const Projects = (props: any) => {
         content = <Lottie options={errorOptions} />;
     } else {
         content = (
-            <div className="projects__container grid grid-cols-1 landscape:grid-cols-2 tablet:grid-cols-2 desktop:grid-cols-3 gap-y-14 place-items-center max-w-[120rem] m-auto landscape:gap-x-5 landscape:tablet:gap-x-0">
+            <div className="projects__container grid grid-cols-1 landscape:grid-cols-2 tablet:grid-cols-2 desktop:landscape:grid-cols-3 gap-y-14 place-items-center max-w-[120rem] m-auto landscape:gap-x-5 landscape:tablet:gap-x-0">
                 {props.projects.map((project: any) => (
                     <ProjectCard key={project._id} project={project} />
                 ))}

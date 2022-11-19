@@ -1200,10 +1200,6 @@ h4 {
   width: 75%;
 }
 
-.w-1\/4 {
-  width: 25%;
-}
-
 .min-w-\[40rem\] {
   min-width: 40rem;
 }
@@ -2113,10 +2109,6 @@ main {
     width: 37rem;
   }
 
-  .tablet\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .tablet\:max-w-\[30rem\] {
     max-width: 30rem;
   }
@@ -2251,18 +2243,6 @@ main {
 
   .portrait\:hidden {
     display: none;
-  }
-
-  .portrait\:w-1\/2 {
-    width: 50%;
-  }
-
-  .portrait\:w-\[50vw\] {
-    width: 50vw;
-  }
-
-  .portrait\:w-1\/4 {
-    width: 25%;
   }
 
   .portrait\:w-2\/5 {
@@ -2478,6 +2458,14 @@ main {
 
     .tablet\:landscape\:leading-\[6rem\] {
       line-height: 6rem;
+    }
+  }
+}
+
+@media (min-width: 87.5rem) {
+  @media (orientation: landscape) {
+    .desktop\:landscape\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 }
