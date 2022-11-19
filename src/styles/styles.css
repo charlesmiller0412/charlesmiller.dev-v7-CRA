@@ -124,7 +124,7 @@ main {
         @apply text-xl text-black;
     }
     h4 {
-        @apply text-sm text-blue capitalize font-medium justify-self-center;
+        @apply text-sm text-blue capitalize font-medium justify-self-center tablet:justify-self-start;
     }
     .box {
         @apply rounded-tl-[5rem] rounded-br-[5rem] rounded-bl-[1rem] rounded-tr-[1rem];

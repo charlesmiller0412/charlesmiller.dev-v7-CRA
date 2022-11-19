@@ -33,8 +33,8 @@ export const Hero = (props: any) => {
                         </span>{" "}
                         UX/UI Designer
                     </h3>
-                    <SocialLinks className="socialLinks text-icons portrait:w-1/2 w-2/3 flex justify-between tablet:m-0 landscape:my-2 m-auto landscape:m-0" />
-                    <div className="hero__buttons flex justify-evenly landscape:justify-between gap-5 landscape:m-0 tablet:justify-between w-full m-auto tablet:m-0 tablet:w-full tablet:max-w-[30rem] z-10">
+                    <SocialLinks className="socialLinks text-icons portrait:w-2/5 w-2/3 flex justify-between tablet:m-0 landscape:my-2 m-auto landscape:m-0" />
+                    <div className="hero__buttons flex justify-evenly landscape:justify-between gap-5 landscape:m-0 tablet:justify-between w-1/2 m-auto tablet:m-0 tablet:w-full tablet:max-w-[30rem] z-10">
                         <a href="#projects">
                             <Button
                                 className="btn btn__light--blue w-[12rem] tablet:landscape:w-[12rem] landscape:w-[10rem] whitespace-nowrap dark:border dark:border-offWhite border border-black"

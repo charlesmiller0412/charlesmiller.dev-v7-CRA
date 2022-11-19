@@ -888,6 +888,12 @@ h4 {
   color: rgb(126 174 205 / var(--tw-text-opacity));
 }
 
+@media (min-width: 57.6rem) {
+  h4 {
+    justify-self: start;
+  }
+}
+
 .box {
   border-top-left-radius: 5rem;
   border-bottom-right-radius: 5rem;
@@ -1150,8 +1156,8 @@ h4 {
   width: 100vw;
 }
 
-.w-\[17rem\] {
-  width: 17rem;
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .w-\[12rem\] {
@@ -1194,12 +1200,8 @@ h4 {
   width: 75%;
 }
 
-.w-\[20rem\] {
-  width: 20rem;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
+.w-1\/4 {
+  width: 25%;
 }
 
 .min-w-\[40rem\] {
@@ -2024,6 +2026,11 @@ main {
     margin-bottom: 3.5rem;
   }
 
+  .tablet\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .tablet\:mt-\[5rem\] {
     margin-top: 5rem;
   }
@@ -2106,8 +2113,8 @@ main {
     width: 37rem;
   }
 
-  .tablet\:max-w-\[28rem\] {
-    max-width: 28rem;
+  .tablet\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .tablet\:max-w-\[30rem\] {
@@ -2212,26 +2219,8 @@ main {
     width: 50rem;
   }
 
-  .desktop\:max-w-\[35rem\] {
-    max-width: 35rem;
-  }
-
-  .desktop\:auto-cols-max {
-    grid-auto-columns: -webkit-max-content;
-    grid-auto-columns: max-content;
-  }
-
-  .desktop\:auto-cols-min {
-    grid-auto-columns: -webkit-min-content;
-    grid-auto-columns: min-content;
-  }
-
   .desktop\:auto-cols-auto {
     grid-auto-columns: auto;
-  }
-
-  .desktop\:grid-flow-row {
-    grid-auto-flow: row;
   }
 
   .desktop\:grid-flow-col {
@@ -2266,6 +2255,18 @@ main {
 
   .portrait\:w-1\/2 {
     width: 50%;
+  }
+
+  .portrait\:w-\[50vw\] {
+    width: 50vw;
+  }
+
+  .portrait\:w-1\/4 {
+    width: 25%;
+  }
+
+  .portrait\:w-2\/5 {
+    width: 40%;
   }
 
   .portrait\:justify-evenly {
