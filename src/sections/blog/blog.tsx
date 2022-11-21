@@ -1,6 +1,6 @@
-import { Button } from "../../components/button";
+// import { Button } from "../../components/button";
 import { Headings } from "../../components/headings";
-import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+// import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 
 export const Blog = (props: any) => {
@@ -57,7 +57,7 @@ export const Blog = (props: any) => {
                     </div>
                 ))}
             </div>
-            <a
+            {/* <a
                 href="https://charlesmiller.tech"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -67,7 +67,7 @@ export const Blog = (props: any) => {
                     text="View my blog & social media site"
                     icon={faAnglesRight}
                 />
-            </a>
+            </a> */}
         </section>
     );
 };

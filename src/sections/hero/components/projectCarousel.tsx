@@ -5,7 +5,7 @@ import { Autoplay, EffectCoverflow } from "swiper";
 
 export const ProjectCarousel = (props: any) => {
     return (
-        <div className="projectCarousel w-[40rem] desktop:w-[50rem] landscape:w-[25rem] tablet:landscape:w-[40rem]">
+        <div className="projectCarousel w-[40rem] tablet:w-[50rem]">
             <Swiper
                 effect={"coverflow"}
                 centeredSlides={false}

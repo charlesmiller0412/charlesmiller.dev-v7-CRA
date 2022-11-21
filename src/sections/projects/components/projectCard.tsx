@@ -28,14 +28,14 @@ export const ProjectCard = (props: any) => {
                     />
                 </a>
             </div>
-            <div className="card__overlay absolute top-0 left-0 w-full h-full tablet:h-5/6 min-h-fit bg-gradient-to-r from-cardBG to-cardBG z-10 flex justify-evenly flex-col px-5 opacity-0 active:opacity-100 hover:opacity-100 hover:cursor-crosshair transition-all tablet:portrait:justify-evenly">
+            <div className="card__overlay absolute top-0 left-0 w-full h-[calc(100%-15%)] tablet:h-5/6 min-h-fit bg-gradient-to-r from-cardBG to-cardBG z-10 flex justify-evenly flex-col px-5 opacity-0 active:opacity-100 hover:opacity-100 hover:cursor-crosshair transition-all tablet:portrait:justify-evenly">
                 <h4 className="text-base text-blue font-semiBold leading-base">
                     {props.project.title}
                 </h4>
-                <p className="font-medium hidden tablet:flex text-xs leading-0 text-white tracking-wide h-1/4 overflow-auto my-[5vh]">
+                <p className="font-medium tablet:flex text-xs leading-0 text-white tracking-wide h-1/2 overflow-auto">
                     {props.project.description}
                 </p>
-                <ul className="px-3 grid grid-cols-3 gap-3 text-center uppercase">
+                <ul className="px-3 mb-3 grid grid-cols-3 gap-3 text-center uppercase">
                     {props.project.languages.map((language: any) => (
                         <li
                             key={uuidv4()}
