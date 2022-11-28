@@ -603,6 +603,7 @@ video {
 
 section {
   height: auto;
+  width: 100vw;
   padding-top: 5rem;
   padding-bottom: 5rem;
   padding-left: 2.5rem;
@@ -690,30 +691,6 @@ section {
   --tw-shadow: 4px 4px 0 0 rgba(255,255,255,1);
   --tw-shadow-colored: 4px 4px 0 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.btn__light--black {
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(56 75 82 / var(--tw-border-opacity));
-  background-image: none;
-  --tw-text-opacity: 1;
-  color: rgb(56 75 82 / var(--tw-text-opacity));
-  --tw-shadow: 4px 4px 0 0 rgba(56,75,82,1);
-  --tw-shadow-colored: 4px 4px 0 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.btn__light--black:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(56 75 82 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(56 75 82 / var(--tw-text-opacity));
-}
-
-.dark .btn__light--black {
-  --tw-text-opacity: 1;
-  color: rgb(239 239 239 / var(--tw-text-opacity));
 }
 
 .cardBtn {
@@ -908,14 +885,6 @@ h4 {
   position: relative;
 }
 
-.bottom-48 {
-  bottom: 12rem;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
 .right-0 {
   right: 0px;
 }
@@ -964,6 +933,14 @@ h4 {
   grid-column: span 1 / span 1;
 }
 
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
+.row-span-1 {
+  grid-row: span 1 / span 1;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -1002,12 +979,12 @@ h4 {
   margin-bottom: 2rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mb-3 {
@@ -1040,10 +1017,6 @@ h4 {
 
 .h-auto {
   height: auto;
-}
-
-.h-3\/5 {
-  height: 60%;
 }
 
 .h-full {
@@ -1140,10 +1113,6 @@ h4 {
   width: 25rem;
 }
 
-.w-1\/5 {
-  width: 20%;
-}
-
 .w-\[13rem\] {
   width: 13rem;
 }
@@ -1170,12 +1139,6 @@ h4 {
 
 .max-w-\[25rem\] {
   max-width: 25rem;
-}
-
-.-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-translate-y-1\/2 {
@@ -1207,6 +1170,10 @@ h4 {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1253,20 +1220,16 @@ h4 {
   justify-items: center;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
 
 .gap-3 {
   gap: 0.75rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-36 {
-  gap: 9rem;
 }
 
 .gap-20 {
@@ -1297,8 +1260,16 @@ h4 {
   align-self: flex-end;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .self-stretch {
   align-self: stretch;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .overflow-auto {
@@ -1452,6 +1423,11 @@ h4 {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .py-\[5rem\] {
@@ -2091,6 +2067,10 @@ main {
     height: 100vh;
   }
 
+  .tablet\:h-3\/5 {
+    height: 60%;
+  }
+
   .tablet\:h-full {
     height: 100%;
   }
@@ -2105,10 +2085,6 @@ main {
 
   .tablet\:h-\[3\.5rem\] {
     height: 3.5rem;
-  }
-
-  .tablet\:w-1\/2 {
-    width: 50%;
   }
 
   .tablet\:w-fit {
@@ -2127,6 +2103,10 @@ main {
 
   .tablet\:w-full {
     width: 100%;
+  }
+
+  .tablet\:w-1\/2 {
+    width: 50%;
   }
 
   .tablet\:w-\[80rem\] {
@@ -2182,6 +2162,10 @@ main {
             column-gap: 8rem;
   }
 
+  .tablet\:self-end {
+    align-self: flex-end;
+  }
+
   .tablet\:whitespace-nowrap {
     white-space: nowrap;
   }
@@ -2197,6 +2181,11 @@ main {
   .tablet\:px-\[10rem\] {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .tablet\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .tablet\:px-12 {
@@ -2235,6 +2224,10 @@ main {
 }
 
 @media (min-width: 87.5rem) {
+  .desktop\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .desktop\:auto-cols-auto {
     grid-auto-columns: auto;
   }
@@ -2249,6 +2242,10 @@ main {
 
   .desktop\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .desktop\:gap-36 {
+    gap: 9rem;
   }
 
   .desktop\:gap-64 {
@@ -2356,6 +2353,24 @@ main {
     justify-content: space-between;
   }
 
+  .landscape\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .landscape\:gap-x-20 {
+    -webkit-column-gap: 5rem;
+            column-gap: 5rem;
+  }
+
+  .landscape\:self-end {
+    align-self: flex-end;
+  }
+
+  .landscape\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .landscape\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -2382,6 +2397,10 @@ main {
 
     .tablet\:landscape\:w-\[12rem\] {
       width: 12rem;
+    }
+
+    .tablet\:landscape\:w-\[37rem\] {
+      width: 37rem;
     }
   }
 }

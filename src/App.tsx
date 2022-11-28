@@ -39,7 +39,6 @@ function App() {
             );
             const json = await response.json();
             setArticles(json);
-            console.log(articles);
             setLoading(false);
             setError(false);
             return;

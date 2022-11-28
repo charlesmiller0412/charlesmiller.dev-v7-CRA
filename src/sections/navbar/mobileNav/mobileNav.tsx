@@ -7,7 +7,7 @@ export const MobileNav = () => {
         setShowMenu(!showMenu);
     }
     return (
-        <div className="mobileNav tablet:hidden landscape:hidden">
+        <div className="mobileNav tablet:hidden">
             <MobileIcon handleClick={handleClick} showMenu={showMenu} />
             <MobileMenu handleClick={handleClick} showMenu={showMenu} />
         </div>

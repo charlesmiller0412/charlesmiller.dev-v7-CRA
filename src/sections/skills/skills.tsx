@@ -22,7 +22,6 @@ export const Skills = () => {
             />
             <div className="skills__container grid grid-cols-1 landscape:grid-cols-2 landscape:desktop:grid-cols-3 tablet:grid-cols-2 desktop:grid-cols-3 gap-y-20 gap-5 place-items-center max-w-[120rem] m-auto">
                 <SkillsCard
-                    className="w-1/5"
                     icon={faPen}
                     title="UX/UI Design"
                     text="I create unique user experiences through skillfully created user interface design that stands out among other websites and applications."

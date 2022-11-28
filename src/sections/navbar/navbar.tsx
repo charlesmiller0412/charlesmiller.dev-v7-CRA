@@ -10,7 +10,7 @@ export const Navbar = (props: any) => {
     return (
         <div
             id="navbar"
-            className="navbar hidden landscape:flex tablet:flex bg-black dark:bg-offWhite w-[7rem] hover:w-[30rem] h-screen fixed rounded-r-lg z-50 flex-col gap-20 py-[5rem] overflow-hidden justify-between transition-all"
+            className="navbar hidden tablet:flex bg-black dark:bg-offWhite w-[7rem] hover:w-[30rem] h-screen fixed rounded-r-lg z-50 flex-col gap-20 py-[5rem] overflow-hidden justify-between transition-all"
         >
             <div className="navbar__logo--container px-[.3rem] w-[7rem] grid grid-cols-1 mx-auto">
                 <NavLogo />

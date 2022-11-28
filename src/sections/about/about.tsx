@@ -14,13 +14,13 @@ export const About = (props: any) => {
                 h5="My Life"
                 h2="About Me"
             />
-            <div className="about__container w-full h-3/5 flex justify-between flex-col tablet:flex-row tablet:mt-[5rem] max-w-[120rem] m-auto mt-5">
-                <div className="about__left w-full tablet:w-1/2 grid h-full gap-y-5">
+            <div className="about__container w-full h-full tablet:h-3/5 grid grid-cols-1 gap-10 tablet:grid-cols-2 landscape:grid-cols-2 tablet:flex-row tablet:mt-[5rem] max-w-[120rem] m-auto mt-5">
+                <div className="about__left w-full grid h-full gap-y-5">
                     <HeroImg />
                     <AboutText />
                 </div>
 
-                <div className="about__right w-full m-auto pt-5 mt-5 tablet:mt-0 h-fit min-h-fit tablet:w-fit tablet:h-full flex flex-col justify-between">
+                <div className="w-full m-auto ">
                     <ExperienceCard />
                     <GitCommits />
                     <GithubLanguages />

@@ -75,7 +75,7 @@ main {
 
 @layer components {
     section {
-        @apply tablet:w-[calc(100%-7rem)] h-auto py-[5rem] landscape:py-[4.5rem] tablet:py-[11vh] landscape:tablet:py-[11vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
+        @apply w-screen tablet:w-[calc(100%-7rem)] h-auto py-[5rem] landscape:py-[4.5rem] tablet:py-[11vh] landscape:tablet:py-[11vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
     }
     .btn {
         @apply py-[1rem] tablet:py-[2vh] landscape:py-2 rounded-[.4rem] text-xs lg:text-sm font-medium leading-auto transition-all;
