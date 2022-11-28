@@ -1,5 +1,5 @@
 import { SocialLinks } from "../../../hero/components/social";
-import { NavLogo } from "../../components/navLogo";
+import { MobileLogo } from "../components/mobileLogo";
 import { ResumeBtn } from "../../components/resumeBtn";
 
 export const MobileMenu = (props: any) => {
@@ -72,8 +72,8 @@ export const MobileMenu = (props: any) => {
                     </li>
                 </ul>
                 <div className="mobileMenu__social w-3/4 landscape:w-1/2 landscape:flex landscape:flex-col landscape:items-center landscape:justify-between landscape:h-1/2">
-                    <NavLogo className="navbar__logo w-[8.7rem] h-[2.5rem] relative m-auto portrait:mb-12" />
-                    <ResumeBtn />
+                    <MobileLogo className="navbar__logo w-[8.7rem] h-[2.5rem] relative m-auto portrait:mb-12" />
+                    <ResumeBtn className="text-black" type="light" />
                     <SocialLinks
                         className="w-full flex justify-between py-12 landscape:w-1/2 landscape:m-auto landscape:py-0"
                         onClick={props.handleClick}

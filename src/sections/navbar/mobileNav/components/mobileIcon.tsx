@@ -8,8 +8,12 @@ export const MobileIcon = (props: any) => {
 
     return (
         <div className="mobileIcon fixed top-0 left-0 w-full flex justify-between z-50 bg-white dark:bg-black h-[5rem] items-center select-none">
-            <div className="mobileIcon__theme px-[5vw]">
-                {loaded ? <ThemeToggle className="text-lg" /> : ""}
+            <div className="mobileIcon__theme px-[5vw] h-full flex">
+                {loaded ? (
+                    <ThemeToggle className="text-lg text-offBlack dark:text-offWhite" />
+                ) : (
+                    ""
+                )}
             </div>
             <div className="mobileIcon__hamburger text-black dark:text-blue text-xl px-[5vw] z-40">
                 {props.showMenu === false ? (

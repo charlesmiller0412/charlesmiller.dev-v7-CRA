@@ -39,7 +39,7 @@ export const Contact = () => {
 
     return (
         <section
-            className="contact w-full bg-offWhite dark:bg-offBlack transition-color duration-1000"
+            className="contact w-full bg-offWhite dark:bg-offBlack"
             id="contact"
         >
             <Headings
@@ -49,13 +49,13 @@ export const Contact = () => {
                 h2="Contact"
             />
             <div className="contact__container w-full flex justify-between max-w-[120rem] m-auto flex-col tablet:flex-row tablet:mt-[5rem] text-black dark:text-white">
-                <div className="contact__container--left w-full tablet:w-1/3 justify-evenly h-fit grid grid-cols-2 tablet:gap-x-20">
+                <div className="contact__container--left w-full tablet:w-1/3 justify-evenly h-fit grid grid-cols-2 tablet:gap-x-32">
                     <div className="contact__container--left-location items-start hidden tablet:flex w-full tablet:items-center tablet:w-full flex-col tablet:flex-row h-fit">
                         <FontAwesomeIcon
                             icon={faLocationDot}
                             className="text-lg w-20 text-black dark:text-blue mt-10"
                         />
-                        <div className="text-xs desktop:text-sm border-t tablet:border-l tablet:border-t-0 border-offBlack dark:border-offWhite p-5 desktop:p-10 mt-4 tablet:mt-10 tablet:ml-10 whitespace-nowrap">
+                        <div className="text-xs desktop:text-sm border-t tablet:border-l tablet:border-t-0 border-offBlack dark:border-offWhite p-5 desktop:p-10 mt-4 tablet:mt-10 tablet:ml-5 whitespace-nowrap">
                             <span className="uppercase font-bold text-base block">
                                 Location:
                             </span>
@@ -67,7 +67,7 @@ export const Contact = () => {
                             icon={faEnvelope}
                             className="text-lg w-20 text-black dark:text-blue mt-10"
                         />
-                        <div className="text-xs desktop:text-sm border-t tablet:border-l tablet:border-t-0 border-offBlack dark:border-offWhite p-5 desktop:p-10 mt-4 tablet:mt-10 tablet:ml-10 whitespace-nowrap">
+                        <div className="text-xs desktop:text-sm border-t tablet:border-l tablet:border-t-0 border-offBlack dark:border-offWhite p-5 desktop:p-10 mt-4 tablet:mt-10 tablet:ml-5 whitespace-nowrap">
                             <span className="uppercase font-bold text-base block">
                                 Email:
                             </span>

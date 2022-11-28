@@ -1,7 +1,7 @@
 {
     "name": "version-7",
     "homepage": "https://www.charlesmiller.dev/",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "private": true,
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.2.0",

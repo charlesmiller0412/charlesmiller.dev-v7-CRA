@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #f9f9f9;
+    background-color: #efefef;
 }
 
 body .dark {
@@ -22,11 +22,6 @@ main {
     font-weight: 500;
     font-style: normal;
     scroll-behavior: smooth;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
 }
 
 .navbar__links a:hover {
@@ -80,18 +75,18 @@ main {
 
 @layer components {
     section {
-        @apply w-full h-auto py-[5rem] landscape:py-[4.5rem] tablet:py-[11vh] landscape:tablet:py-[11vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
+        @apply tablet:w-[calc(100%-7rem)] h-auto py-[5rem] landscape:py-[4.5rem] tablet:py-[11vh] landscape:tablet:py-[11vh] px-10 tablet:px-[3rem] desktop:px-[10rem];
     }
     .btn {
-        @apply py-[1rem] tablet:py-[2vh] landscape:py-2 rounded-[.4rem] text-xs lg:text-sm font-regular leading-auto transition-all;
+        @apply py-[1rem] tablet:py-[2vh] landscape:py-2 rounded-[.4rem] text-xs lg:text-sm font-medium leading-auto transition-all;
     }
 
     .btn__light--blue {
-        @apply bg-blue  hover:bg-lightBlue shadow-[4px_4px_0_0_rgba(0,0,0,1)] dark:shadow-[4px_4px_0_0_rgba(255,255,255,1)] text-black;
+        @apply bg-none dark:text-offWhite hover:bg-blue shadow-[4px_4px_0_0_rgba(0,0,0,1)] dark:shadow-[4px_4px_0_0_rgba(255,255,255,1)];
     }
 
     .btn__light--black {
-        @apply bg-black dark:bg-offBlack text-blue hover:bg-offBlack border border-lightBlue shadow-[4px_4px_0_0_rgba(161,220,240,1)];
+        @apply bg-none text-offBlack dark:text-offWhite hover:text-offBlack hover:bg-offBlack border border-offBlack shadow-[4px_4px_0_0_rgba(56,75,82,1)];
     }
 
     .cardBtn {
@@ -124,7 +119,7 @@ main {
         @apply text-xl text-black;
     }
     h4 {
-        @apply text-sm text-blue capitalize font-medium justify-self-center tablet:justify-self-start;
+        @apply text-sm text-blue capitalize font-medium;
     }
     .box {
         @apply rounded-tl-[5rem] rounded-br-[5rem] rounded-bl-[1rem] rounded-tr-[1rem];

@@ -1,7 +1,7 @@
-import IMAGES from "../../../assets/Images";
-import useThemeStore from "../../../appStore";
+import IMAGES from "../../../../assets/Images";
+import useThemeStore from "../../../../appStore";
 
-export const NavLogo = (props: any) => {
+export const MobileLogo = (props: any) => {
     const theme = useThemeStore((state: any) => state.theme);
 
     return (
@@ -10,8 +10,8 @@ export const NavLogo = (props: any) => {
                 <img
                     src={
                         theme === "dark"
-                            ? IMAGES.logos.logoLight
-                            : IMAGES.logos.logoDark
+                            ? IMAGES.logos.logoDark
+                            : IMAGES.logos.logoLight
                     }
                     alt="logo"
                 />

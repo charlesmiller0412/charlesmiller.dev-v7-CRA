@@ -29,7 +29,7 @@ export const Projects = (props: any) => {
         content = <Lottie options={errorOptions} />;
     } else {
         content = (
-            <div className="projects__container grid grid-cols-1 landscape:grid-cols-2 tablet:grid-cols-2 desktop:landscape:grid-cols-3 gap-y-14 place-items-center max-w-[120rem] m-auto landscape:gap-x-5 landscape:tablet:gap-x-0">
+            <div className="projects__container grid grid-cols-1 landscape:grid-cols-2 tablet:grid-cols-2 desktop:landscape:grid-cols-3 gap-y-14 gap-5 desktop:gap-x-28 place-items-center max-w-[120rem] m-auto">
                 {props.projects.map((project: any) => (
                     <ProjectCard key={project._id} project={project} />
                 ))}
@@ -39,7 +39,7 @@ export const Projects = (props: any) => {
                     target="__blank"
                 >
                     <Button
-                        className="flex btn btn__light--blue tablet:whitespace-nowrap w-fit px-20 h-fit items-center"
+                        className="flex btn btn__light--blue bg-blue dark:border-offWhite hover:bg-offWhite border-offBlack border-2 dark:hover:bg-offBlack tablet:whitespace-nowrap w-fit px-20 h-fit items-center"
                         text="View all projects in my database"
                         icon={faAnglesRight}
                     />

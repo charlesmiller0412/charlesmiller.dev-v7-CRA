@@ -8,6 +8,7 @@ import {
     faFolderTree,
 } from "@fortawesome/free-solid-svg-icons";
 import { faAccessibleIcon } from "@fortawesome/free-brands-svg-icons";
+import { AboutSkills } from "./components/aboutSkills";
 
 export const Skills = () => {
     return (
@@ -19,7 +20,7 @@ export const Skills = () => {
                 h5className="headings__right--h5 text-sm"
                 h2className="headings--h2 text-lg tablet:text-xl"
             />
-            <div className="skills__container grid grid-cols-1 landscape:grid-cols-2 tablet:grid-cols-2 desktop:grid-cols-3 gap-y-20 gap-5 place-items-center max-w-[120rem] m-auto">
+            <div className="skills__container grid grid-cols-1 landscape:grid-cols-2 landscape:desktop:grid-cols-3 tablet:grid-cols-2 desktop:grid-cols-3 gap-y-20 gap-5 place-items-center max-w-[120rem] m-auto">
                 <SkillsCard
                     className="w-1/5"
                     icon={faPen}
@@ -51,6 +52,9 @@ export const Skills = () => {
                     title="Search Engine Optimization"
                     text="What’s the point of having a website if no one can find it? I use my research skills to determine the best tags and meta data to store in your files and put you at the top of the search results page."
                 />
+            </div>
+            <div className="w-full mx-auto max-w-[120rem] mt-20">
+                <AboutSkills />
             </div>
         </section>
     );

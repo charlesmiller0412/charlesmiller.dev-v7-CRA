@@ -13,15 +13,21 @@ export const ThemeToggle = (props: any) => {
             }}
         >
             {theme === "dark" ? (
-                <div className="sun">
+                <div className="sun cursor-pointer w-[25rem] grid grid-cols-3 items-end hover:text-blue">
                     <FontAwesomeIcon icon={faSun} className={props.className} />
+                    <span className="hidden tablet:flex  text-white dark:text-offBlack text-sm tracking-[.6rem] whitespace-nowrap">
+                        Dark Mode
+                    </span>
                 </div>
             ) : (
-                <div className="moon">
+                <div className="sun cursor-pointer w-[25rem] grid grid-cols-3 items-end hover:text-blue">
                     <FontAwesomeIcon
                         icon={faMoon}
                         className={props.className}
                     />
+                    <span className="hidden tablet:flex text-white dark:text-offBlack text-sm tracking-[.6rem] whitespace-nowrap">
+                        Light Mode
+                    </span>
                 </div>
             )}
         </button>

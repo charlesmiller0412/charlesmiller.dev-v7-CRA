@@ -68,19 +68,27 @@ function App() {
     return (
         <>
             <main
-                className="overflow-x-hidden dark bg-white dark:bg-black"
+                className="overflow-x-hidden dark bg-offWhite dark:bg-black flex motion-reduce:transition-none"
                 id="main"
             >
-                <Navbar theme={theme} setTheme={setTheme} />
-                <MobileNav />
-                <Hero theme={theme} projects={projects} />
-                <Projects projects={projects} error={error} loading={loading} />
-                <Skills />
-                <About />
-                <Blog articles={articles} error={error} loading={loading} />
-                <Contact />
+                <div className="hidden landscape:flex landscape:w-[7rem]">
+                    <Navbar theme={theme} setTheme={setTheme} />
+                </div>
+                <div className="w-full">
+                    <MobileNav />
+                    <Hero theme={theme} projects={projects} />
+                    <Projects
+                        projects={projects}
+                        error={error}
+                        loading={loading}
+                    />
+                    <Skills />
+                    <About />
+                    <Blog articles={articles} error={error} loading={loading} />
+                    <Contact />
+                </div>
             </main>
-            <footer className="bg-white dark:bg-black h-[2rem] text-black dark:text-white text-xs flex justify-center items-center">
+            <footer className="bg-offWhite dark:bg-black h-[2rem] text-black dark:text-white text-xs flex justify-center items-center">
                 {new Date().getFullYear()} Copyright &copy; Charles Miller. All
                 rights reserved.
             </footer>

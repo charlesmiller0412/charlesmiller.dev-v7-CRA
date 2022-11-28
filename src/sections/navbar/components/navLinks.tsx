@@ -1,40 +1,74 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faHouse,
+    faBriefcase,
+    faListCheck,
+    faUser,
+    faFileLines,
+    faPen,
+} from "@fortawesome/free-solid-svg-icons";
+
 export const NavLinks = () => {
     return (
-        <div className="navbar__links flex justify-between items-center w-1/2 max-w-[62.5rem] desktop:text-md font-semiBold text-base">
+        <div className="navbar__links flex flex-col gap-[3rem] overflow-hidden font-medium justify-start">
             <a
                 href="#hero"
-                className="relative cursor-pointer after:content-[''] after:w-full after:h-[.3rem] after:absolute after:bottom-0 after:left-0 hover:after:bg-blue text-black dark:text-white"
+                className="cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
             >
+                <FontAwesomeIcon
+                    icon={faHouse}
+                    className="text-[2rem] w-[7rem]"
+                />
                 Home
             </a>
             <a
                 href="#projects"
-                className="relative cursor-pointer after:content-[''] after:w-full after:h-[.3rem] after:absolute after:bottom-0 after:left-0 hover:after:bg-blue text-black dark:text-white"
+                className="cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
             >
+                <FontAwesomeIcon
+                    icon={faBriefcase}
+                    className="text-[2rem] w-[7rem]"
+                />
                 My Work
             </a>
             <a
                 href="#skills"
-                className="relative cursor-pointer after:content-[''] after:w-full after:h-[.3rem] after:absolute after:bottom-0 after:left-0 hover:after:bg-blue text-black dark:text-white"
+                className="cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
             >
+                <FontAwesomeIcon
+                    icon={faListCheck}
+                    className="text-[2rem] w-[7rem]"
+                />
                 My Specialties
             </a>
             <a
                 href="#about"
-                className="relative cursor-pointer after:content-[''] after:w-full after:h-[.3rem] after:absolute after:bottom-0 after:left-0 hover:after:bg-blue text-black dark:text-white"
+                className="cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
             >
+                <FontAwesomeIcon
+                    icon={faUser}
+                    className="text-[2rem] w-[7rem]"
+                />
                 About Me
             </a>
             <a
                 href="#blog"
-                className="relative cursor-pointer after:content-[''] after:w-full after:h-[.3rem] after:absolute after:bottom-0 after:left-0 hover:after:bg-blue text-black dark:text-white"
+                className="cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
             >
+                <FontAwesomeIcon
+                    icon={faFileLines}
+                    className="text-[2rem] w-[7rem]"
+                />
                 Latest Blogs
             </a>
             <a
                 href="#contact"
-                className="relative cursor-pointer after:content-[''] after:w-full after:h-[.3rem] after:absolute after:bottom-0 after:left-0 hover:after:bg-blue text-black dark:text-white"
+                className="cursor-pointer w-[25rem] hover:dark:text-blue hover:text-lightBlue text-white dark:text-offBlack text-sm tracking-[.6rem] grid grid-cols-3 items-center whitespace-nowrap"
             >
+                <FontAwesomeIcon
+                    icon={faPen}
+                    className="text-[2rem] w-[7rem]"
+                />
                 Contact Me
             </a>
         </div>
